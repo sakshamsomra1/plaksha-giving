@@ -6,7 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Areastogive from './Pages/Areastogive';
 import Home from './Pages/Home';
 import Howtogive from './Pages/Howtogive';
-
+//main
 const router = createBrowserRouter([
 {
   path:"/",
