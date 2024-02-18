@@ -1,0 +1,81 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family:Open sans, sana-serif;
+}
+
+.giving-header
+{
+    border-top: 8px solid #00555a;
+    background-image: url(https://giving.plaksha.edu.in/images/blue_lines_full.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 80px;
+    height: 600px;
+}
+
+.logo img
+{
+    width: 215px;
+}
+
+
+.giving-header .top-part
+{
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.giving-header .top-part a
+{
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+
+/* Button In nav bar */
+
+.home-nav-btn
+{
+    
+    background: #fff;
+    color: #000 !important;
+    padding: 13px 25px !important;
+    border-radius: 5px;
+    margin-left: 16px;
+    
+}
+.home-nav-btn:hover
+{
+    box-shadow: 0px 5px 10px #01B67B;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.home-nav-btn::after
+{
+    content:'>';
+    margin-left: 5px;
+}
+
+
+.header-heading
+{
+    font-size: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.header-desc
+{
+    font-size: 12px;
+    color: #fff;
+}
