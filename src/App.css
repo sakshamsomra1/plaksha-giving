@@ -11,11 +11,18 @@ html {
   }
 
 .main_nav_banner{
-    border-top:8px solid #00555a;
+    /* border-top:8px solid #00555a;
     background-image: url("./images/blue_lines_full.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom:80px;
+    padding-bottom:20%; */
+    border-top: 8px solid #00555a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 2%;
+    /* background-color: #246c70; */
+
+    background-color: #00555a;
 }
 
 .main_nav_banner li a:hover{
