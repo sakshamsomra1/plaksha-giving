@@ -2,9 +2,43 @@ import React from 'react';
 import Cards from '../../Card/Card';
 import SliderComponent from '../../slider/slider';
 
+import OwlCarousel from 'react-owl-carousel'
+
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 const NavBannerEnd = () => {
+
+
+
+    const owlOptions = {
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      };
+
+
+    
+
+
+
+
     return (
+
+    
         <>
+        
         <section className="hgmd_section my-xl-5 my-lg-5 my-md-5 my-sm-2 my-2 py-xl-5 py-lg-5 py-md-5 py-sm-3 py-3">
             <div className="container">
                 {/* <div className="row mb-xl-5 mb-lg-5 mb-md-5 mb-sm-2 mb-2 pb-xl-5 pb-lg-5 pb-md-5 pb-sm-2 pb-2">
@@ -37,7 +71,20 @@ const NavBannerEnd = () => {
                             students who may otherwise not have the means or opportunity to study at Plaksha</p>
                     </div>
                 </div> */}
-                <Cards/>
+                {/* <Cards/> */}
+
+                <OwlCarousel className="owl-theme" {...owlOptions}>
+        {/* Your carousel items */}
+        <div>dwada</div>
+        <div>dawdad</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </OwlCarousel>
+
+
+                
             </div>
         </section>
         <div className="row mb-xl-5 mb-lg-5 mb-md-5 mb-sm-3 mb-3">
@@ -46,6 +93,7 @@ const NavBannerEnd = () => {
           </div>
         </div>
         <SliderComponent/>
+
         </>
     );
 }
