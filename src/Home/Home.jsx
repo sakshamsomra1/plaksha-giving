@@ -1,5 +1,6 @@
 
 
+// import Demo from "../demo/demo";
 import MainNavBanner from "./NavAndBanner/navandbanner";
 import NavBannerEnd from "./NavAndbannerEnd/navBannerEnd";
 
@@ -8,9 +9,11 @@ const Home = () => {
 
         <>
        
+     
         <MainNavBanner/>
        <NavBannerEnd/>
        
+
       
         </>
      );

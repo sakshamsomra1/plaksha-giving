@@ -1,5 +1,6 @@
 import React from 'react';
 import Cards from '../../Card/Card';
+// import Demo from '../../demo/demo';
 import SliderComponent from '../../slider/slider';
 
 import OwlCarousel from 'react-owl-carousel'
@@ -71,20 +72,11 @@ const NavBannerEnd = () => {
                             students who may otherwise not have the means or opportunity to study at Plaksha</p>
                     </div>
                 </div> */}
-                {/* <Cards/> */}
 
-                <OwlCarousel className="owl-theme" {...owlOptions}>
-        {/* Your carousel items */}
-        <div>dwada</div>
-        <div>dawdad</div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </OwlCarousel>
+                <Cards/>
+               
 
 
-                
             </div>
         </section>
         <div className="row mb-xl-5 mb-lg-5 mb-md-5 mb-sm-3 mb-3">
