@@ -1,5 +1,6 @@
 import React from 'react';
 import Cards from '../../Card/Card';
+// import Demo from '../../demo/demo';
 import SliderComponent from '../../slider/slider';
 
 const NavBannerEnd = () => {
@@ -38,6 +39,7 @@ const NavBannerEnd = () => {
                     </div>
                 </div> */}
                 <Cards/>
+               
             </div>
         </section>
         <div className="row mb-xl-5 mb-lg-5 mb-md-5 mb-sm-3 mb-3">
