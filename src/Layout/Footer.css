@@ -1,0 +1,23 @@
+#footer{
+    background-color: #002938 !important;
+    border-radius: 20px;
+    color: aliceblue;
+    width: 99% !important;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#texts{
+    color: aliceblue;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.text-reset{
+    text-decoration: none !important;
+    font-family: sans-serif ;
+}
+
+.border-bottom {
+    border-bottom: var(--bs-border-width) var(--bs-border-style) none !important;
+}

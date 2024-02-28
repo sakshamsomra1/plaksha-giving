@@ -31,7 +31,7 @@ function Header() {
                           <NavLink to="/areas-to-give" >Faqs</NavLink>
                           <NavLink to="/areas-to-give" >Contact</NavLink>
                           <a href="https://plaksha.edu.in/" >plaksha home</a>
-                          <a className='home-nav-btn'>Make a Gift</a>
+                          {/* <a className='home-nav-btn'>Make a Gift</a> */}
                         </nav>
                 </div>
             </div>

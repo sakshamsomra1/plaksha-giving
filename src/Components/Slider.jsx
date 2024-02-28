@@ -3,7 +3,7 @@ import { Row } from 'react-bootstrap'
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.min.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
-
+import './slider.css';
 import '../Public/CSS/Slider.css';
 import { Link } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ function Slider() {
         center: true,
         items: 3,
         margin: 0,
-        autoplay: true,
+        // autoplay: true,
         dots: true,
         autoplayTimeout: 8500,
         smartSpeed: 450,
@@ -31,7 +31,7 @@ function Slider() {
                 items: 1
             },
             600: {
-                items: 3
+                items: 1
             },
             1000: {
                 items: 3
@@ -41,7 +41,7 @@ function Slider() {
     return (
         <>
             <h2 className='heading-slider'>How Gifts Make a Difference</h2>
-            <Row>
+            <Row className='owlholder'>
                 <OwlCarousel className='owl-theme ' {...options} >
             
                     <div class='item'>
