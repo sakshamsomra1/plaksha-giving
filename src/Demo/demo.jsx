@@ -87,10 +87,11 @@ const Demo = () => {
         // make navbar fixed & change logo color
         if (window.pageYOffset > headerSection.offsetHeight - 75) {
             nav.classList.add("active");
-            logoImage.src = "https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988525/logo-rosa.png";
+            
+            logoImage.src = "https://plaksha.edu.in/assets/logo-green.png?v=2";
         } else {
             nav.classList.remove("active");
-            logoImage.src = "https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/logo-rosa-white.png";
+            logoImage.src = "https://plaksha.edu.in/images/logo-new.png";
         }
 
         // header welcome fade out and in
@@ -242,11 +243,9 @@ const Demo = () => {
   return (
     <div>
       {/* Start loader */}
-      <div className="loader-wrap">
-        <div className="loader">
-          <span className="loader-item"></span><span className="loader-item"></span><span className="loader-item"></span><span className="loader-item"></span><span className="loader-item"></span><span className="loader-item"></span><span className="loader-item"></span><span className="loader-item"></span><span className="loader-item"></span><span className="loader-item"></span>
-        </div>
-      </div>
+
+      
+      
       {/* End loader */}
 
       {/* Start Dots */}
@@ -261,7 +260,7 @@ const Demo = () => {
       <header>
         <nav>
           <div className="logo">
-            <a href="index.html"><img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988515/logo-rosa-white.png" alt="Rosa Logo" /></a>
+            <a href="index.html"><img  id='img' src="https://plaksha.edu.in/images/logo-new.png" alt="Rosa Logo" /></a>
           </div>
           <div className="toggle">
             <span className="first"></span>
@@ -281,17 +280,17 @@ const Demo = () => {
           </div>
         </nav>
         <div className="text">
-          <h2>Welcome</h2>
-          <h1>THE ROSA</h1>
+          <h2 style={{color: "white", marginBottom: "20px"}}>Give To</h2>
+          <h1 style={{color: "white"}} >Plaksha University</h1>
           <div className="arrow">
             <span className="left"></span>
             <i className="fas fa-asterisk"></i>
             <span className="right"></span>
           </div>
-          <span>Ready To Be Opened</span>
-          <div className="button"><button>Explore</button></div>
+          {/* <span>Ready To Be Opened</span> */}
+          <a href='https://plaksha.edu.in/' className="button"><button>Explore</button></a>
         </div>
-        {/* <svg className="svg-down" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xmlSpace="preserve"><path fill="currentColor" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg> */}
+        <svg className="svg-down" width="192" height="61" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 160.7 61.5" enable-background="new 0 0 160.7 61.5" xmlSpace="preserve"><path fill="currentColor" d="M80.3,61.5c0,0,22.1-2.7,43.1-5.4s41-5.4,36.6-5.4c-21.7,0-34.1-12.7-44.9-25.4S95.3,0,80.3,0c-15,0-24.1,12.7-34.9,25.4S22.3,50.8,0.6,50.8c-4.3,0-6.5,0,3.5,1.3S36.2,56.1,80.3,61.5z"></path></svg> 
         <div className="arrow-down">
         </div>
       </header>
@@ -300,18 +299,19 @@ const Demo = () => {
       {/* Start About Us */}
       <div className="about-us">
         <div className="text">
-          <h2>Discover</h2>
-          <h3>Our Story</h3>
+          <h2 className='ttext' >Why</h2>
+          <h3 className='ttext'>Give to Plaksha</h3>
           <div><i className="fas fa-asterisk"></i></div>
-          <p>Rosa is a restaurant, bar and coffee roastery located on a busy corner site in Farringdon’s Exmouth Market. With glazed frontage on two sides of the building, overlooking the market and a bustling London intersection.</p>
+          <p>Plaksha is an institution built with the collective philanthropy of 60+ donors and has a community that is growing consistently. These philanthropic contributions to Plaksha help in sustaining cutting-edge research, promoting solutions to address societal challenges, and assisting students from disadvantaged backgrounds. All gifts, irrespective of the amount, go a long way in supporting Plaksha’s commitment to nurture the next generation of fearless leaders, and to addressing the toughest challenges that our planet is facing.</p>
           <div><a className="a-CTA" href="#">About Us</a></div>
         </div>
         <div className="image-container">
           <div className="image image1">
-            <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988527/vertical-photo-1.jpg" alt="Food Photo" />
+            {/* <img className='dimg' src="https://static.wixstatic.com/media/266ad0_8d3f05c518614300a75e42543e1a5386~mv2.jpg/v1/fill/w_980,h_1307,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/266ad0_8d3f05c518614300a75e42543e1a5386~mv2.jpg" alt="Food Photo" /> */}
+            <img className='dimg' src="https://plaksha-university-bucket.s3.ap-southeast-1.amazonaws.com/public/assets/1699600347DSC06261_11zon.jpg" alt="Food Photo" />
           </div>
           <div className="image image2">
-            <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988532/vertical-photo-2.jpg" alt="Food Photo" />
+            <img className='dimg' src="https://library.plaksha.edu.in/opac-tmpl/bootstrap/images/3.jpeg" alt="Food Photo" />
           </div>
         </div>
       </div>
@@ -321,8 +321,8 @@ const Demo = () => {
       <div className="recipes">
         <div className="image"></div>
         <div className="text">
-          <h2>Tasteful</h2>
-          <h3>Recipes</h3>
+          <h2 style={{fontSize: "60px"}}>Celebrating</h2>
+          <h3 style={{fontSize: "40px"}}>Diversity</h3>
         </div>
       </div>
       {/* End Recipes */}
@@ -343,24 +343,30 @@ const Demo = () => {
         </div>
         <div className="menu-image-container">
           <div className="image active">
-            <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988517/big-menu-thumb-1.jpg" alt="Food Photo" />
+          <img className='plak' src="https://www.collegebatch.com/static/clg-gallery/plaksha-university-mohali-178436.jpg" alt="Food Photo" />
+           
           </div>
           <div className="image">
-            <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988526/big-menu-thumb-2.jpg" alt="Food Photo" />
+          <img  className='plak' src="https://images.indianexpress.com/2023/04/plaksha.jpg" alt="Food Photo" />
+         
+           
           </div>
           <div className="image">
-            <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988525/big-menu-thumb-4.jpg" alt="Food Photo" />
+          <img  className='plak' src="https://plaksha-university-bucket.s3.ap-southeast-1.amazonaws.com/public/assets/1702987113untitled%20design%20%285%291702987113.png" alt="Food Photo" />
           </div>
           <div className="image">
-            <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988524/big-menu-thumb-6.jpg" alt="Food Photo" />
+          <img  className='plak' src="https://plaksha-university-bucket.s3.ap-southeast-1.amazonaws.com/public/assets/1663401598Untitled%20design%20%282%29.png" alt="Food Photo" />
           </div>
         </div>
         <div className="text">
-          <h2>Discover</h2>
-          <h3>Menu</h3>
+          <h2 className='ttext'>Discover</h2>
+          {/* <h3 className='ttext'>Menu</h3> */}
           <div><i className="fas fa-asterisk"></i></div>
-          <p>For those with pure food indulgence in mind, come next door and sate your desires with our ever changing internationally and seasonally inspired small plates.  We love food, lots of different food, just like you.</p>
-          <div><a className="a-CTA" href="#">View The Full Menu</a></div>
+          <p>Plaksha’s core vision is to nurture the next generation of fearless leaders who can address the toughest problems in these unpredictable times. It is done by providing an enabling entrepreneurial and innovative ecosystem.
+“India will have limitless opportunities for the next few years. Opportunities that can only be realized by leveraging technology and entrepreneurship. I envision Plaksha as a learning center where we create a generation of hands-on builders who would be able to solve the grand challenges facing India and the developing world. The University has a unique interdisciplinary approach and problem-solving orientation and has the potential to redefine technology education globally.”
+
+</p>
+          <div className="a-CTA">~ Alok Mittal, Founder & Trustee, Plaksha</div>
         </div>
       </div>
       {/* End Menu */}
@@ -374,8 +380,10 @@ const Demo = () => {
       </div>
       {/* End fixed-image */}
 
+      <br />
+
       {/* Start Reservation */}
-      <div className="reservation">
+      {/* <div className="reservation">
         <div className="text">
           <h2>Culinary</h2>
           <h3>Delight</h3>
@@ -391,7 +399,7 @@ const Demo = () => {
             <img src="https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988518/bacon-2.jpg" alt="Food Photo" />
           </div>
         </div>
-      </div>
+      </div> */}
       {/* End Reservation */}
 
       {/* Start Footer */}

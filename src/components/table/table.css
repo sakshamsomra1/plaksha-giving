@@ -1,0 +1,16 @@
+/* Add borders to the table and its rows and cells */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+    
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+/* Add background color to the table header row */
+thead tr {
+    background-color: #f2f2f2;
+}
