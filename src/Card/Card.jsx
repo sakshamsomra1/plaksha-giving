@@ -37,7 +37,7 @@ const Article = ({ data, index }) => {
   return (
     <figure className={`snip1584 ${isFirstCard ? 'first-card' : ''}`}>
       <img src={image} alt={title} />
-      <figcaption style={{ padding: "30px" }}>
+      <figcaption style={{ padding: "30px", wordWrap: "break-word", whiteSpace: "pre-wrap", overflow: "hidden" }}>
         <h3 style={{ fontSize: "15px", fontFamily: "sans-serif", fontWeight: "bold" }}>{title}</h3>
         {isFirstCard ? (
           <h4

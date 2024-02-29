@@ -35,7 +35,7 @@ function App() {
         <Routes>
           <Route path="/our-donors.html" element={<Donars/>}/>
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </>
     </Router>
   );
