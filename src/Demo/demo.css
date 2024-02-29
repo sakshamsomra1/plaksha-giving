@@ -38,7 +38,7 @@ p {
     line-height: 27px;
 }
 .a-CTA {
-    border-bottom: 2px solid #a96700;
+    border-bottom: 2px solid #00555a;
     padding-bottom: 4px;
     letter-spacing: 1.5px;
     font-size: 18px;
@@ -50,7 +50,7 @@ p, .a-CTA, input, header .navigation-bar a, .copyright li, .contact .form form l
     font-family: Cabin, sans-serif;
 }
 .fa-asterisk, .a-CTA, h2, header .navigation-bar a:hover, header nav.active .navigation-bar a:hover, footer .social-media .links a:hover, .copyright .info li a, .copyright .CTA li a:hover {
-    color: #a96700;
+    color: #00555a;
 }
 header nav .navigation-bar .underline, header .text .button button:hover, .contact .form form button:hover, .contact .text i:hover {
     background-color: #a96700;
@@ -569,7 +569,9 @@ header .text .arrow .left:after, header .text .arrow .right:after, header .text 
 header {
     height: calc(100vh - 22px);
     background-size: cover;
-    background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988534/header.jpg") fixed bottom;
+    background: url("https://plaksha-university-bucket.s3.ap-southeast-1.amazonaws.com/public/assets/1702989305Untitled%20design%20%2812%29.png") fixed top;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 20px 70px;
 }
 header nav {
@@ -620,7 +622,10 @@ header nav .toggle span:not(:last-of-type) {
 header nav .logo {
     flex-basis: 56%;
     padding-left: 50px;
+  
 }
+
+
 header .navigation-bar.show {
     width: 40%;
 }
@@ -736,11 +741,38 @@ header .arrow-down {
 }
 /*End About-Us*/
 
+
+.image{
+
+    overflow: hidden;
+    
+    
+
+}
+
+.dimg:hover{
+
+    scale: 110%;
+    transition: 0.5s;
+
+}
+
+
 /*Start Recipes*/
 .recipes .image {
     height: 350px;
-    background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988529/three-col-1.jpg") fixed center;
+    background: url("https://plaksha-university-bucket.s3.ap-southeast-1.amazonaws.com/public/assets/1693628495OG%20image.jpg") fixed center;
     background-size: cover;
+}
+
+.h3, h3 {
+  
+    color: white !important;
+}
+
+.h2, h2 {
+  
+    color: white !important;
 }
 /*End Recipes*/
 
@@ -785,6 +817,12 @@ header .arrow-down {
 .menu .box-image-container {
     height: 100%;
 }
+
+
+#img{
+    height: 60px !important;
+}
+
 .menu .box-image-container .box-image img.active {
     animation: scale .5s;
 }
@@ -814,7 +852,7 @@ header .arrow-down {
 
 /*Start fixed-image*/
 .fixed-image {
-    background: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988533/frontpage-menu.jpg") fixed center;
+    background: url("../video/plak6.jpg") fixed center;
     background-size: cover;
     height: 400px;
 }
@@ -822,7 +860,7 @@ header .arrow-down {
 
 /*Start Footer*/
 footer {
-    background-color: #121212;
+    background-color: #177479;
     padding: 60px 20px;
 }
 footer .text {
@@ -871,7 +909,7 @@ footer .newsletter i {
 }
 .copyright {
     padding: 15px 40px 30px;
-    background-color: #262526;
+    background-color: #0b595e;
 }
 .copyright .svg-up {
     top: 0;
@@ -913,6 +951,34 @@ footer .newsletter i {
     background-image: url("https://res.cloudinary.com/abdel-rahman-ali/image/upload/v1535988526/contact-food.jpg");
     height: 40vh;
 }
+
+p{
+    font-size: 18px !important;
+}
+
+
+.ttext{
+    color: #0f7d83 !important;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+.plak{
+
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+
+
+}
+
+.dimg{
+    width: 400px !important;
+    height: 600px;
+    object-fit: cover;
+}
+
 .contact {
     padding: 78px 40px;
 }
