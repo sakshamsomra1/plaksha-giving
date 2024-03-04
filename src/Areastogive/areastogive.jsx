@@ -2,6 +2,11 @@ import React from 'react';
 import NavBannerEnd from '../Home/NavAndbannerEnd/navBannerEnd';
 import SliderComponent from '../slider/slider';
 import logo from '../images/logo-white.png'
+import Footer from '../Footer/footer';
+import Cards from '../Card/Card';
+// import Tab from '../tab/tab';
+import '../Demo/demo.css'
+
 
 
 
@@ -46,26 +51,96 @@ function PlakshaPage() {
       </section>
       {/* NAV AND BANNER AREA END */}
 
-      <section className="inner_banner_area">
-        <div className="container">
-          <div className="row">
-            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 py-3 text-center">
-              <div className="shadow p-3 mb-5 bg-white p-5">
-                <h2 className="text-uppercase font-weight-600">Areas to Give</h2>
+      <section className="inner_banner_area" >
+      
+        <div className="container" >
+          <div className="row" >
+            <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 py-3 text-center" >
+              <div className="shadow p-3 mb-5 bg-white p-5"style={{height:'500px'}}>
+               
                 <p>
+                <h1 className='ttext' style={{fontFamily:'sans-serif'}}>Areas to Give</h1>
+                <br />
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                   Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                   when an unknown printer took a galley of type and scrambled it to make a type 
                   specimen book. It has survived not only five centuries, but also the leap into 
                   electronic typesetting, remaining essentially unchanged.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer took a galley of type and scrambled it to make a type 
+                  specimen book. It has survived not only five centuries, but also the leap into 
+                  electronic typesetting, remaining essentially unchanged.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown printer took a galley of type and scrambled it to make a type 
+                  specimen book. It has survived not only five centuries, but also the leap into 
+                  electronic typesetting, remaining essentially unchanged.
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                  when an unknown pri.
                 </p>
               </div>
             </div>
           </div>
+          <Cards/>
         </div>
-        <SliderComponent/>
-      </section>
+       
 
+
+        <div className="about-us" style={{marginTop:'100px'}}>
+        <div className="text">
+          {/* <h2 className="ttext">Why</h2> */}
+          <h3 className="ttext">Give to Plaksha</h3>
+          <div>
+            <i className="fas fa-asterisk"></i>
+          </div>
+          <p style={{marginTop:'50px'}}>
+            Plaksha is an institution built with the collective philanthropy of
+            60+ donors and has a community that is growing consistently. These
+            philanthropic contributions to Plaksha help in sustaining
+            cutting-edge research, promoting solutions to address societal
+            challenges, and assisting students from disadvantaged backgrounds.
+            All gifts, irrespective of the amount, go a long way in supporting
+            Plaksha's commitment to nurture the next generation of fearless
+            leaders, and to addressing the toughest challenges that our planet
+            is facing. All gifts, irrespective of the amount, go a long way in supporting
+            Plaksha's commitment to nurture the next generation of fearless
+            leaders, and to addressing the toughest challenges that our planet
+            is facing. All gifts, irrespective of the amount, go a long way in supporting
+            Plaksha's commitment to nurture the next generation of fearless
+            leaders, and to addressing the toughest challenges that our planet
+            is facing.
+          </p>
+          <div>
+            {/* <a className="a-CTA" href="#">
+              About Us
+            </a> */}
+          </div>
+        </div>
+        <div className="image-container">
+          <div className="image image1">
+            {/* <img className='dimg' src="https://static.wixstatic.com/media/266ad0_8d3f05c518614300a75e42543e1a5386~mv2.jpg/v1/fill/w_980,h_1307,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/266ad0_8d3f05c518614300a75e42543e1a5386~mv2.jpg" alt=" Photo" /> */}
+            <img
+              className="dimg"
+              src="https://giving.plaksha.edu.in/images/faqs.jpg"
+              alt="plaksha Photo"
+            />
+          </div>
+          <div className="image image2">
+            <img
+              className="dimg"
+              src="https://plaksha-university-bucket.s3.ap-southeast-1.amazonaws.com/public/assets/16479513277.jpg"
+              alt="plaksha Photo"
+            />
+          </div>
+        </div>
+      </div>
+        {/* <SliderComponent/> */}
+       
+      </section>
+    
+    
       {/* <section className="content_area_inner">
         <div className="container">
           <div className="row py-3">
@@ -73,7 +148,8 @@ function PlakshaPage() {
           </div>
         </div>
       </section> */}
-    
+      
+    <Footer/>
 
      
       

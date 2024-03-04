@@ -6,10 +6,10 @@ import "./Cards.css";
 
 const cardsData = [
   {
-    image: "https://wallpapers.com/images/featured/teal-kcdfddvu6g9ht29a.jpg",
+    image: "https://plaksha-university-bucket.s3.ap-southeast-1.amazonaws.com/public/assets/16802419241305x735.jpg",
     title:
       "Sustaining cutting-edge research, promoting solutions to societal challenges, assisting studentsAll gifts, big or small, go a long way in supporting Plaksha's commitment to nurturego a long way in supporting Plaksha's commitment to nurturego a long way in supporting Plaksha's commitment to nurturego a long way in supporting ",
-    subtitle: "Advertising",
+    subtitle: "Cutting Edge Research",
     description: "Sustaining ",
   },
   {
@@ -22,40 +22,68 @@ const cardsData = [
   },
   {
     image:
-      "https://plaksha-university-bucket.s3.ap-southeast-1.amazonaws.com/public/assets/1706779615yts1706779615.jpg",
+      "https://plaksha-university-bucket.s3.ap-southeast-1.amazonaws.com/public/assets/1702963344DSC05676-min%20%281%29.jpg",
     title:
       "Nurture next generation of fearless leaders to solve the toughest challenges facing our planet.All gifts, big or small, go a long way in supporting Plaksha's commitment to nurturego a long way in supporting Plaksha's commitment to nurturego a long way in supporting Plaksha's commitment to nurturego a long way  in supporting",
-    subtitle: "Accounting",
+    subtitle: "Fearless Leaders",
+    description: "Next generation ",
+  },
+  {
+    image:
+      "https://pbs.twimg.com/media/FEzt63IVkAEnEDg?format=jpg&name=4096x4096",
+    title:
+      "Nurture next generation of fearless leaders to solve the toughest challenges facing our planet.All gifts, big or small, go a long way in supporting Plaksha's commitment to nurturego a long way in supporting Plaksha's commitment to nurturego a long way in supporting Plaksha's commitment to nurturego a long way  in supporting",
+    subtitle: "Fearless Leaders",
+    description: "Next generation ",
+  },
+  {
+    image:
+      "https://plaksha-university-bucket.s3.ap-southeast-1.amazonaws.com/public/assets/1663401586Untitled%20design%20%281%29.png",
+    title:
+      "Nurture next generation of fearless leaders to solve the toughest challenges facing our planet.All gifts, big or small, go a long way in supporting Plaksha's commitment to nurturego a long way in supporting Plaksha's commitment to nurturego a long way in supporting Plaksha's commitment to nurturego a long way  in supporting",
+    subtitle: "Fearless Leaders",
     description: "Next generation ",
   },
 ];
 
 const Article = ({ data, index }) => {
-  const { image, title, description } = data;
+  const { image, title, description ,subtitle} = data;
   const isFirstCard = index === 0;
 
   return (
-    <figure className={`snip1584 ${isFirstCard ? 'first-card' : ''}`}>
+    <figure className={`snip1584 first-card`}>
       <img src={image} alt={title} />
-      <figcaption style={{ padding: "30px", wordWrap: "break-word", whiteSpace: "pre-wrap", overflow: "hidden" }}>
+      
+      <figcaption style={{ padding: "30px", wordWrap: "break-word", whiteSpace: "pre-wrap", overflow: "hidden" ,   backgroundColor:' background-color: rgba(48, 42, 42, 0.342)'}}>
         <h3 style={{ fontSize: "15px", fontFamily: "sans-serif", fontWeight: "bold" }}>{title}</h3>
-        {isFirstCard ? (
-          <h4
+         
+          
+          <h2
             className="desc"
             style={{
               color: "white",
               fontFamily: "sans-serif",
-              fontWeight: "normal",
-              backgroundColor: "#6b6464",
+              fontWeight: "bold",
+              // backgroundColor: "#6b6464",
               padding: "3px 10px",
               borderRadius: "3px",
-              marginTop: "-80px"
+              marginTop: "90px",
+           
             }}
           >
+
+        
             {description}
-          </h4>
-        ) : null}
+            <br />
+            <p style={{fontSize:"25px",color:'white'}}> {subtitle}</p>
+           
+          </h2>
+     
+        {/* <h3 style={{ fontSize: "15px", fontFamily: "sans-serif", fontWeight: "bold" }}>{subtitle}</h3> */}
+        
       </figcaption>
+      
+
       <a href="#"></a>
     </figure>
   );
@@ -63,8 +91,8 @@ const Article = ({ data, index }) => {
 
 const News = ({ data }) => {
   const settings = {
-    // dots: true,
-    // infinite: true,
+    dots: true,
+    infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
   };
